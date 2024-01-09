@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+body {
+  background: #000;
+}
+
+#canvas1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#playerImage,
+#brackground,
+#enemyImage {
+  display: none;
+}
+
+#fullScreenBtn {
+  position: absolute;
+  font-size: 10px;
+  padding: 10px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00000067;
+  color: #e9e9e9;
+  border-radius: 5px;
+  backdrop-filter: blur(4px);
+}
+
+#howToPlay {
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#howToPlayDiv {
+  padding: 2rem;
+  background-color: #e9e9e9;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  display: none;
+}
+
+#howToPlayDiv button {
+  color: red;
+  padding: 10px 0;
+  background-color: rgba(255, 0, 0, 0.076);
+  cursor: pointer;
+}
+h1,
+p,
+small {
+  padding: 10px 0;
+}
+.activeBtn {
+  animation: activeBtn infinite ease-in-out 5s;
+}
+
+@keyframes activeBtn {
+  0% {
+    box-shadow: 0 0 1rem rgb(39, 178, 217);
+  }
+  20% {
+    box-shadow: 0 0 1.2rem rgb(40, 114, 243);
+  }
+  40% {
+    box-shadow: 0 0 1rem rgb(173, 96, 255);
+  }
+  60% {
+    box-shadow: 0 0 1.2rem rgb(52, 152, 218);
+  }
+  80% {
+    box-shadow: 0 0 1rem rgb(91, 236, 154);
+  }
+  100% {
+    box-shadow: 0 0 1.2rem rgb(210, 106, 255);
+  }
+}

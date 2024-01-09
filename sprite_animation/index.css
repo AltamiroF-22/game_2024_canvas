@@ -1,0 +1,36 @@
+#canvas1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+}
+.controls {
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
+  padding: 8px 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.controls,
+select,
+option {
+  font-size: 25px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+body {
+  background-image: linear-gradient(to bottom, #9594db, rgb(40, 17, 74));
+  background-repeat: no-repeat;
+  height: 100vh;
+}
