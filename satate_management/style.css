@@ -12,6 +12,7 @@ body {
 canvas {
   top: 0;
   left: 0;
+  background-image: linear-gradient(to bottom, #050815,#020824);
 }
 
 img {
@@ -24,5 +25,4 @@ img {
   width: 100%;
   text-align: center;
   font-size: 50px;
-
 }
